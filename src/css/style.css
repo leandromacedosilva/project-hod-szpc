@@ -1,0 +1,70 @@
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+main {
+  & .carrossel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  & .informacoes {
+    display: none;
+
+    & h1 {
+      background-color: #fb923c;
+      font-size: 35px;
+      color: #ffffff;
+      margin-bottom: 80px;
+      font-family: "GOT";
+      letter-spacing: 8px;
+    }
+
+    & .descricao {
+      background-color: #ef4444;
+      width: 49%;
+      font-size: 24px;
+      color: #ffffff;
+      line-height: 40px;
+      overflow: auto;
+      padding-right: 15px;
+    }
+  }
+
+  & .informacoes.ativa {
+    display: block;
+  }
+
+  & .conteudo {
+    background-color: #60a5fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+  }
+
+  & .conteudo{
+
+    & .botoes-carrossel {
+      display: flex;
+      background-color: #4f46e5;
+      justify-content: center;
+      gap: 20px;
+
+      & .botao {
+        background-color: #4ade80;
+      }
+    }
+  }
+
+}
+
+@font-face {
+  font-family: "GOT";
+  src: url(../fontes/GOT.ttf);
+}
